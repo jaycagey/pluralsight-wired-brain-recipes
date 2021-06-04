@@ -1,4 +1,5 @@
-
+http://chris.beams.io/posts/git-commit/
+	Rules for a great commit message
 
 git log
 	show log of commits
@@ -14,3 +15,7 @@ git add
 
 git log --patch
 	shows everything -- can be scrolled up/down
+
+git rm <<filename>>
+	remove file and stop tracking status
+
