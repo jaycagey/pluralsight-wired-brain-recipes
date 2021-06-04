@@ -1,6 +1,26 @@
 http://chris.beams.io/posts/git-commit/
 	Rules for a great commit message
 
+http://git-school.github.io/visualizing-git/
+	run git commit, etc and it will visualize it
+
+
+
+-----
+git status
+	show repository status
+
+git status -s
+	show short list of status
+	column 1 -- staged
+	column 2 -- modified
+	column 3 -- file name
+
+	You can have a file show up in cols 1 & 2. For instance
+	MM git-stuff.txt
+		this means the file was changed and 'add' to staged
+		but then modified again after that
+
 git log
 	show log of commits
 
@@ -19,3 +39,24 @@ git log --patch
 git rm <<filename>>
 	remove file and stop tracking status
 
+git rm --cached <<filename>>
+	stop tracking the file
+
+git mv <<current-filename>> <<new-filename>>
+
+git checkout -b <<branch name>>
+	create a new branch and checkout to it
+
+[[[[[[[[[
+Try these in visualizer to see how branching and HEAD develop/move around
+git commit
+git commit
+git checkout -b new_branch
+git commit
+git commit
+git checkout master
+git commit
+git commit
+git checkout new_branch
+git commit
+]]]]]]]]]
