@@ -30,6 +30,10 @@ git log -<<number>>
 git log -stat
 	show files and their last commit (like svn status)
 
+git log --oneline
+  one line per commit
+
+
 git add
 	moves file from new/modified to staged
 
@@ -71,3 +75,29 @@ git stash
 
 git merge <<branch>
 	merges <<branch>> into the current checked out branch/master
+
+
+git reset --soft
+  move commits back into staging area
+
+git reset  (or git reset --mixed)
+  moves commits back to working directory
+
+git reset --hard
+  moves commits to trash
+
+		EXAMPLE
+	% git log --oneline
+	d5afa08 (HEAD -> master) Add text (BLAH BLAH BLAH) to git-stuff that I'll want to undo with git reset
+	8b24de3 (new_branch) committing after I thought I merged new_branch
+	1f66f15 Update git-stuff.txt
+	c9116a7 Update git-stuff.txt
+	df8c12f Update git-stuff & just created new branch
+	46aa528 Add to list of git commands
+	efb3e77 added list of useful git commands
+	497e55a (origin/master) 2nd commit with new/edited files
+	19b48aa First commit
+
+	% git reset --mixed 8b24de3
+
+
