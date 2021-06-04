@@ -70,5 +70,4 @@ git stash
 		restores your stashed stuff
 
 git merge <<branch>
-	merges the branch into master
-	
+	merges <<branch>> into the current checked out branch/master
