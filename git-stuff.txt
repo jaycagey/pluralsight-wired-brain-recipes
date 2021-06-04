@@ -46,6 +46,9 @@ git mv <<current-filename>> <<new-filename>>
 
 git checkout -b <<branch name>>
 	create a new branch and checkout to it
+	do just "git branch" if you want to create a branch but not switch to it
+
+Branches - use git status to see which branch you're on
 
 [[[[[[[[[
 Try these in visualizer to see how branching and HEAD develop/move around
@@ -60,3 +63,8 @@ git commit
 git checkout new_branch
 git commit
 ]]]]]]]]]
+
+git stash
+	save working state of branch and 'stash' it so that your changed stuff won't interfere with commits
+	git stash pop
+		restores your stashed stuff
