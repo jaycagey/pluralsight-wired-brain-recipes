@@ -1,0 +1,16 @@
+
+
+git log
+	show log of commits
+
+git log -<<number>>
+	restrict output to a specific number of commits
+
+git log -stat
+	show files and their last commit (like svn status)
+
+git add
+	moves file from new/modified to staged
+
+git log --patch
+	shows everything -- can be scrolled up/down
