@@ -68,3 +68,7 @@ git stash
 	save working state of branch and 'stash' it so that your changed stuff won't interfere with commits
 	git stash pop
 		restores your stashed stuff
+
+git merge <<branch>
+	merges the branch into master
+	
