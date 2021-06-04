@@ -51,6 +51,8 @@ git mv <<current-filename>> <<new-filename>>
 git checkout -b <<branch name>>
 	create a new branch and checkout to it
 	do just "git branch" if you want to create a branch but not switch to it
+>> can also use git switch
+
 
 Branches - use git status to see which branch you're on
 
@@ -99,5 +101,3 @@ git reset --hard
 	19b48aa First commit
 
 	% git reset --mixed 8b24de3
-
-
